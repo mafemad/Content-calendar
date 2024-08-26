@@ -1,0 +1,20 @@
+GET http://localhost:8080/api/content
+
+###
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "second Post",
+  "description": "second post",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-08-26T16:03:43.8649707",
+  "dateUpdated": null,
+  "url": ""
+}
+
+
+
+
