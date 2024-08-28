@@ -1,11 +1,12 @@
 package com.mafemad.contentcalendar.model;
 
-import org.springframework.cglib.core.Local;
+import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDateTime;
 
 public record Content(
         Integer id,
+        @NotBlank
         String title,
         String description,
         Status status,

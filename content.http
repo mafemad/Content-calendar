@@ -1,6 +1,7 @@
+### get all
 GET http://localhost:8080/api/content
 
-###
+### create one
 POST http://localhost:8080/api/content
 Content-Type: application/json
 
@@ -15,6 +16,23 @@ Content-Type: application/json
   "url": ""
 }
 
+### update by id
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "update",
+  "description": "update",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-08-26T16:03:43.8649707",
+  "dateUpdated": null,
+  "url": ""
+}
+
+### delete by id
+DELETE http://localhost:8080/api/content/1
 
 
 
